@@ -347,6 +347,8 @@ body {
     font-family: 'GilroyMedium';
     display: inline-block;
     color: #fff;
+    transition: all .5s;
+    animation: zoom 1.3s infinite;
 }
 
 img.menstore {
@@ -540,4 +542,16 @@ p.title-home {
     font-size: 10px;
     margin-top: 4px;
     display: block;
+}
+
+@keyframes zoom {
+    0% {
+        box-shadow: 0 0 0 0 #c31d1d;
+    }
+    70% {
+        box-shadow: 0 0 0 15px transparent;
+    }
+    100% {
+        box-shadow: 0 0 0 0 transparent;
+    }
 }
